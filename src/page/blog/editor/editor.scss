@@ -1,0 +1,73 @@
+
+  .editor{
+    input{
+        outline: none;
+    }
+    textarea{
+        outline: none;
+    }
+    // padding-top:5px;
+    margin-top:10%;
+    margin-left: 5%;
+    background-color: #F9F9F9;
+    width: 90%;
+    border:0.5px solid #C5C9CD;
+    
+    height:90px;
+    input{
+        
+        outline-style: none ;
+        border-style: none ;
+        box-shadow: none;
+        border-radius: 5px;
+        height:33px;
+        margin:5px;
+        margin-top:7px;
+        width:60%;
+        border:0.5px solid #C5C9CD;
+        margin-bottom: -3px;
+        
+        // border-radius: 2px;
+    }
+    
+    
+    button{
+        margin-top:5px;
+        margin-right:5%;
+        float:right;
+        padding-top: 5px;
+        width:100px;
+        height:40px;
+        background-color: #33717f;
+        border-radius: 13px;
+        margin-left:-40px;
+        color:#fff;
+        font-weight: 500;
+        font: outline;
+        font-size: 14px;
+        &:nth-child(1){
+            
+            border-radius: 13px;
+            background-color: #33717f;
+        }
+        &:nth-child(2){
+            
+            border-radius: 13px;
+            background-color: #FFC1C2;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+  }
+  .container {
+    margin-top:10px;
+    position: relative;
+    width: 100%;
+    
+    $mde-preview-default-min-height:900px!default;
+    .mde-text{
+        min-height:500px !important;
+        max-height:auto !important;
+    }
+  }

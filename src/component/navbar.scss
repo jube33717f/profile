@@ -1,0 +1,187 @@
+body {
+    height:100%;    
+    font-family: Courier;
+}
+.pf__title{
+
+    left:14%;
+    
+    height:130px;
+    width:100%;
+    // margin: 0 auto;
+    position: fixed;
+    z-index:1000;
+    top: 10%;
+    transform: translateY(-20%);
+    font-family: Courier;
+    white-space:pre-line;
+    &--name { 
+        white-space:pre-line;
+        font-size: 22px;
+        float: left;
+        font-weight:400;
+        // width:20%;
+        p{
+            &:nth-child(1){
+                color: #7C7B80;
+                float: left;
+                text-shadow: 1px 0px 1px #7C7B80;
+                white-space:pre-line;
+                padding-right: 15px;
+            }
+            &:nth-child(2){
+                color:#00c9b1;
+                float: left;
+                text-shadow: 1px 0px 1px #00c9b1;
+            }
+        }
+        
+    }
+    ul{
+        // display: flex;
+        overflow: hidden;
+        color:#BBBABB;
+        margin-top: 30px;
+        margin-right: 25%;
+        cursor: pointer;
+        li{
+            list-style: none;
+            float:right;
+            // letter-spacing:0.4px;
+            padding-left: 30px;
+            text-decoration: none;
+            
+        }
+    }
+    &--menu{
+        display:none;
+    }
+    &--link{
+        // list-style: none;
+        float:right;
+        letter-spacing:0.4px;
+        text-decoration: none;
+        color:#8E939A;
+        &:hover{
+            color:#86858A;
+            border-bottom: 2px solid #00c9b1;
+        }         
+    }
+    &--link-active{
+        float:right;
+        letter-spacing:0.4px;
+        text-decoration: none;
+        color:#86858A;
+        border-bottom: 2px solid #00c9b1;
+    }
+}
+.sticked{
+    width: 100%;
+    margin-left:-14%;
+    padding-left:13%;
+    margin-top:-80px;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 1032px){
+    .pf__title{
+        width: 100%;
+        margin-left:-14%;
+        padding-left:13%;
+        margin-top:-80px;
+        background-color: #33717f;
+        height: 70px;
+        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+        &--name{
+            font-size:20px;
+            margin-top: 20px;
+            p:nth-child(1){
+                color:#fff;
+            }
+
+        }
+        
+        
+        &--menubar{ 
+            display:none;
+        }
+        &--menu{
+            display:block;
+            //background-url:("https://img.icons8.com/bubbles/50/000000/menu.png");
+            
+            margin-top:30px;
+            float:right;
+            margin-right:15%;
+            // background-color: #fff;
+            img{
+                height:40px;
+                width:40px;
+            }
+            
+        }
+        &--menuli{
+            // margin-top:100px;
+            // float:right;
+            width:200px;
+            // left:58%;
+            right:-15%;
+            top:40px;
+            float: right;
+            position: fixed;
+            background:#33717f;
+            //margin-right:-50%;
+            
+            height:2000px;
+            color:#fff;
+            transition: all 0.44s ease-in-out;
+            list-style: none;
+            li{
+                  
+                    text-align: center;
+                    width:100%;
+                    margin-top: 30px;
+                a{
+                    color: #fff;
+                    padding: 15px 10px;
+                    margin: 0;
+                    text-align: center;
+   
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    text-decoration: none;
+                    outline: none;
+                    &:active{
+                        border-bottom: 2px solid #00c9b1;;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 502px){
+    .pf__title{
+        position: absolute;
+        &--menu{
+            display:block;
+            //background-url:("https://img.icons8.com/bubbles/50/000000/menu.png");
+            
+            margin-top:30px;
+            float:right;
+            margin-right:25%;
+            // background-color: #fff;
+            img{
+                height:40px;
+                width:40px;
+            }
+            
+        }
+    }
+}
+
+
+

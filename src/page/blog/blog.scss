@@ -1,0 +1,246 @@
+.pf__blog{
+    position:relative;
+    margin-top:10%;
+    width:80%;
+    left:10%;
+    height:830px;
+    background-color: #ffc0c2;
+    box-shadow: 4px 2px 40px #7C7B80;
+    border-radius: 15px;
+    padding-bottom: 60px;
+    border:1px rgba(200,200,200,0);
+    animation:mymoveq 1s ease-in;
+    @keyframes mymoveq {
+        from {
+            opacity: 0;
+            transform: scale3d(0.3, 0.3, 0.3);
+          }
+        
+          50% {
+            opacity: 1;
+          }
+    }
+    &--fp{
+        
+        width: 100%;
+        background-color: #33717f;
+        border-top-left-radius:15px;
+        border-top-right-radius:15px;
+        height: 160px;
+        h1{
+            font-size:55px;
+            padding-top:50px;
+            color:#fff;
+            text-align: center;
+        }
+        &-search{
+            float: right;
+            margin-top:-50px;
+            color:#fff;
+            width:20%;
+            margin-right:10px;
+            input{
+                background:none;
+                border-radius: 10px;
+                height:20px;
+                margin-right:10px;
+                outline:none;
+                border:1px solid #fff;
+                // width:100%;
+                margin-left:10px;
+                width:80%;
+                opacity: 0;
+                color:#fff;
+            }
+           &:hover{
+               input{
+                   opacity: 1;
+               }
+           } 
+        }
+    }
+    &--sp{
+        padding-top: 5px;
+        &--article{
+            float: left;
+            margin-left:4%;
+            margin-right:3%;
+            margin-top:30px;
+            height:300px;
+            width:42%;
+            position: relative;
+            padding: 0;
+            background-color: #f7e9e3;
+            text-align: center;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+            &-bg{
+               
+                height:220px;
+                
+                a{
+                    width:100%;
+                    height:100%; 
+                    img{
+                        width:100%;
+                        height:100%;  
+                    }
+                    .mask{
+                        position: absolute;
+                        background: #4f565e;
+                        background: rgba(79,86,94,1);
+                        display: inline-block;
+                        font-family: 'FontAwesome';
+                        width:100%;
+                        height:220px;
+                        margin-left:-100%;
+                        opacity: 0;
+                        line-height: 220px;
+                        font-size:40px;
+                    }
+                    &:hover{
+
+                        .mask{
+                            opacity: 0.6;
+                        }
+
+                    }
+                }
+                
+                &-date{
+                    position: absolute;
+                    width:50px;
+                    height:70px;
+                    background-color: #f7e9e3;
+                    box-shadow: 1px 1px 1px #7C7B80;
+                    opacity: 0.8;
+                    margin-left:80%;
+                    margin-top:5%;
+                    color:#33717f;
+                    h3{
+                        margin-top:13px;
+                        margin-bottom: 2px;
+                    }
+                    span{
+                        // margin-top:-20px;
+                        width:50px;
+                        font-size:18px;
+                        font-weight: 500;
+                    }
+                    
+                }
+                
+            }
+            &-info{
+                p{
+                    color: #9e9e9e;
+                    font-size: 0.8em;
+                    font-weight: 400;
+                }
+                h4{
+                    margin-top:-1px;
+                }
+            }
+        
+        }
+        height:80%;
+    }
+    &--tp{
+        // position: absolute;
+        // margin-top:65%;
+        // padding-top: 10px;
+        margin: 0 auto;
+        margin-top: 25px;
+        width:8%;
+        font-size: 16px;
+        color:#33717f;
+        height:20px;
+        // align-items: center;
+        text-align: center;
+        display: flex;
+        &-page{
+            margin: 0 auto;
+            margin-top:-8px;
+            width:37px;
+            height:30px;
+            border-radius: 50%;
+            background-color:#f7e9e3;
+            text-align: center;
+            border:0.5px solid rgba(51,113,127,0.1);
+            
+            p{
+                margin-top: 0px;
+                color:#33717f;
+                font-size:10px;
+                line-height: 27px;
+            }
+        }
+        
+    }
+}
+.loading{
+    li{
+        list-style: none;
+        animation: rota 5s infinite;
+        font-size:50px;
+        @keyframes rota {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+    }
+    margin:0 auto;
+    text-align: center;
+    font-size: 50px;
+    margin-top:20%;
+    color:#33717f;
+    animation: tada 5s infinite;
+    @keyframes tada {
+        from {
+          transform: scale3d(1, 1, 1);
+        }
+      
+        10%,
+        20% {
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+        }
+      
+        30%,
+        50%,
+        70%,
+        90% {
+          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        }
+      
+        40%,
+        60%,
+        80% {
+          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        }
+      
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+}
+@media only screen and (max-width: 900px){
+    .pf__blog{
+        height:1500px;
+    }
+    .pf__blog--sp--article{
+        width:80%;
+        margin-left:10%;
+    }
+    .pf__blog--tp{
+        // margin-top:50px;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 502px){
+    .pf__blog{
+        width:100%;
+        left:0;
+        border-radius:0;
+        &--fp{
+            border-radius:0; 
+        }
+    }
+}

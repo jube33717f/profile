@@ -1,0 +1,74 @@
+.auth{
+    
+
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:100;
+    // filter:blur(2px);
+    
+    
+    &-inner{
+        // font-family: Courier;
+        p{
+            width:30%;
+            margin:0 auto;
+            margin-top: 30px;
+        }
+        input{
+            &:focus{
+                outline: none;
+            }
+            margin:0 auto;
+            margin-top: 10px;
+            width:70%;
+            height: 40px;
+            border-radius: 5px;
+            border:0.4px solid #000B26;
+            background-color: rgba(255,255,255,0.5);
+        }
+        button{
+            margin-top:30px;
+            background-color: #33717f;
+            margin-left:7px;
+            color: #fff;
+            border: 0;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.3);
+            text-transform: uppercase;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 2.8;
+            padding: 0 1.5em;
+            outline: none;
+            border: 0;
+            border-radius: 3px;
+        }
+        font-family: 'Open Sans';
+        border-radius: 10px;
+        text-align: center;
+        top:25%;
+        left:25%;
+        width:50%;
+        height:400px;
+        position:fixed;
+        z-index:2;
+        background-color: #FFC1C2;
+        box-shadow: 0 0 0 50vmax rgba(0,0,0,0.8);
+        animation:mym 0.5s ease-in;
+        @keyframes mym{
+            0%{
+                
+                top:-200px;
+                
+                height:0%;
+            }
+           100%{
+              
+              
+               width:50%;
+               height:400px;
+           }
+        }
+    }
+}
