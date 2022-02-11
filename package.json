@@ -15,7 +15,7 @@
     "axios": "^0.19.2",
     "emailjs-com": "^2.4.1",
     "google-maps-react": "^2.0.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-fontawesome": "^1.7.1",
